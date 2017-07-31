@@ -103,8 +103,8 @@ int string_to_int(string str)
 	int num;
 
 	num = (str[0] - '0') * 100;
-	num = (str[1] - '0') * 10;
-	num = (str[2] - '0') * 1;
+	num += (str[1] - '0') * 10;
+	num += (str[2] - '0') * 1;
 		
 	return num;
 }
