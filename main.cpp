@@ -6,15 +6,15 @@ using namespace std;
 const int RAM_SIZE = 1000;
 const int REGISTER_SIZE = 10;
 
-void ram_init(string []);
-void register_init(string []);
+void ram_init(string []); // init array for ram to all "000"
+void register_init(string []); // init array for register to all "000"
 
-int process_instuructions(string [], string []);
-string int_to_string(int);
-int string_to_int(string);
+int process_instuructions(string [], string []); // process each instructions in ram
+string int_to_string(int); // change integer to three digits string
+int string_to_int(string); // change string to integer
 
 
-void display_array(string [], int size);
+void display_array(string [], int size); // to display arrays for test
 
 int main()
 {
